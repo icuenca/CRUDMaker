@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+    <head><title>Sumatoria</title></head>
+    <body>
+        <form action="." method="POST"> 
+            {% csrf_token %}
+            <table>
+            {{ form.as_table }}
+            </table>
+            <input type="submit">
+        </form>
+        {{ resultado }}
+    </body>
+</html>
